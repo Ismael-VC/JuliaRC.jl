@@ -15,7 +15,23 @@ julia> repositories = [
            "https://github.com/Ismael-VC/JuliaRC.jl"
        ];
 
-julia> foreach(Pkg.clone, repositories)
+julia> foreach(Pkg.clone, repositories)                                                                                   
+INFO: Initializing package repository /home/juser/.julia/v0.5                                                             
+INFO: Cloning METADATA from https://github.com/JuliaLang/METADATA.jl
+INFO: Cloning Tokenize from https://github.com/KristofferC/Tokenize.jl
+INFO: Computing changes...
+INFO: Cloning cache of Compat from https://github.com/JuliaLang/Compat.jl.git
+INFO: Installing Compat v0.9.5
+INFO: Package database updated
+INFO: Cloning OhMyREPL from https://github.com/KristofferC/OhMyREPL.jl
+INFO: Computing changes...
+INFO: Cloning cache of BaseTestNext from https://github.com/JuliaCI/BaseTestNext.jl.git
+INFO: Installing BaseTestNext v0.2.2
+INFO: Cloning JuliaRC from https://github.com/Ismael-VC/JuliaRC.jl
+INFO: Computing changes...
+INFO: No packages to install, update or remove                                                                            
+                                                                                                                          
+julia>       
 ```
 
 ## Setup
