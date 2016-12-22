@@ -24,7 +24,7 @@ ismaelvc@toybox ~ % echo "alias julia='/path/to/julia -q'" >> ~/.zshrc && source
 
 ```dos
 C:\Users\Ismael
-λ echo julia=C:\path\to\julia -q $* >> C:\Path\To\Cmder\config\user-aliases.cmd    # restart shell
+λ echo julia=C:\path\to\julia.exe -q $* >> C:\Path\To\Cmder\config\user-aliases.cmd && call C:\Path\To\Cmder\config\user-aliases.cmd
 ```
 
 ## Usage
