@@ -10,10 +10,10 @@
 
 ```julia
 julia> repositories = [
-    "https://github.com/KristofferC/Tokenize.jl",
-    "https://github.com/KristofferC/OhMyREPL.jl",
-    "https://github.com/Ismael-VC/JuliaRC.jl"
-];
+           "https://github.com/KristofferC/Tokenize.jl",
+           "https://github.com/KristofferC/OhMyREPL.jl",
+           "https://github.com/Ismael-VC/JuliaRC.jl"
+       ];
 
 julia> foreach(Pkg.clone, repositories)
 ```
