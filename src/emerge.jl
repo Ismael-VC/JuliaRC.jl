@@ -1,5 +1,6 @@
 export emerge
 
+
 function recompile_packages()
     for pkg in keys(Pkg.installed())
         try
