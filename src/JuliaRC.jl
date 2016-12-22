@@ -1,5 +1,8 @@
 module JuliaRC
 
+using Compat, OhMyREPL
+
+
 source_files = [
     "constants.jl",
     "environment.jl",
