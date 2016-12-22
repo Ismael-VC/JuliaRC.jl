@@ -1,3 +1,6 @@
+export @comment, @%, @import, @do, @until, @def
+
+
 macro comment(expr) end
 macro %(expr) end
 
