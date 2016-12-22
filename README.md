@@ -5,3 +5,16 @@
 [![Coverage Status](https://coveralls.io/repos/Ismael-VC/JuliaRC.jl/badge.svg?branch=master&service=github)](https://coveralls.io/github/Ismael-VC/JuliaRC.jl?branch=master)
 
 [![codecov.io](http://codecov.io/github/Ismael-VC/JuliaRC.jl/coverage.svg?branch=master)](http://codecov.io/github/Ismael-VC/JuliaRC.jl?branch=master)
+
+# Installation
+
+```julia
+julia> Pkg.clone("https://github.com/Ismael-VC/JuliaRC.jl.git")
+```
+
+# Usage
+
+```julia
+# ~/.juliarc.jl
+using JuliaRC
+```
