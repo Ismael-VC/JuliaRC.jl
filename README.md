@@ -17,14 +17,14 @@ julia> Pkg.clone("https://github.com/Ismael-VC/JuliaRC.jl.git")
 * `zsh`
 
 ```bash
-ismaelvc@toybox ~ % echo "alias julia='/path/to/julia -q'" >> ~/.zshrc && source ~/.zshrc
+ismaelvc@toybox ~ % echo "alias julia='$(which julia) -q'" >> ~/.zshrc && source ~/.zshrc
 ```
 
 * `cmder`
 
 ```dos
 C:\Users\Ismael
-λ echo julia=C:\path\to\julia.exe -q $* >> C:\Path\To\Cmder\config\user-aliases.cmd && call C:\Path\To\Cmder\config\user-aliases.cmd
+λ echo julia=%JULIA_HOME%\julia.exe -q $* >> %CMDER_ROOT%\config\user-aliases.cmd && call %CMDER_ROOT%\config\user-aliases.cmd
 ```
 
 ## Usage
