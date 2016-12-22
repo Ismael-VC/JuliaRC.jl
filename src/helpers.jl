@@ -1,12 +1,9 @@
-# Only 0.3.x
-if v"0.3" <= VERSION < v"0.4-"
-    quot(expr) = Expr(:quote, expr)
-else
-    @eval using Base.Meta: quot, show_sexpr
+export @sexpr, @methods, @methodswith, @dump, @macroexpand
 
-    macro sexpr(expr)
-        :((show_sexpr($(quot(expr))); println()))
-    end
+using Base.Meta: quot, show_sexpr
+
+macro sexpr(expr)
+    :((show_sexpr($(quot(expr))); println()))
 end
 
 macro methods(func::Symbol)
