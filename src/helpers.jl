@@ -1,6 +1,7 @@
+using Base.Meta: quot, show_sexpr
+
 export @sexpr, @methods, @methodswith, @dump, @macroexpand
 
-using Base.Meta: quot, show_sexpr
 
 macro sexpr(expr)
     :((show_sexpr($(quot(expr))); println()))
