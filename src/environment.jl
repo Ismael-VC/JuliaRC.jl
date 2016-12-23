@@ -1,7 +1,7 @@
 ENV["PYTHON"] = ""
 ENV["JULIA_WARN_COLOR"] = :yellow
 ENV["JULIA_INFO_COLOR"] = :cyan
-ENV["EDITOR"] = "subl"
+ENV["EDITOR"] = "atom"    # "subl"
 # ENV["LISP_PROMPT_TEXT"]  = "λ ↦ "
 
 @static if is_windows()
