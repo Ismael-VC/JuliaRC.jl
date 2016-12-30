@@ -1,6 +1,6 @@
 using Base.Meta: quot, show_sexpr, isexpr
 
-export @sexpr, @methods, @methodswith, @dump, @macroexpand
+export @sexpr, @methods, @methodswith, @dump, @macroexpand, @esc
 
 
 macro sexpr(expr)
