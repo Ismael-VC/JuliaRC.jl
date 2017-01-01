@@ -6,10 +6,10 @@ function recompile_packages()
         try
             info("Compiling: $pkg")
             @eval using $(Symbol(pkg))
-            println(SEPARATOR)
         catch err
             warn("Unable to precompile: $pkg")
             warn(err)
+        finally
             println(SEPARATOR)
         end
     end
