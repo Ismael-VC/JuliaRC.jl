@@ -5,7 +5,7 @@ function recompile_packages()
     for pkg in keys(Pkg.installed())
         try
             info("Compiling: $pkg")
-            eval(Expr(:toplevel, Expr(:using, Symbol(pkg))))
+            @eval using $(Symbol(pkg))
             println(SEPARATOR)
         catch err
             warn("Unable to precompile: $pkg")
