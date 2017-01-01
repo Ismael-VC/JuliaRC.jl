@@ -27,6 +27,6 @@ macro macroexpand(expr)
 end
 
 macro esc(sym)
-    isexpr(sym, :quote) || throw(ArgumentError("expected quoted symbol")
+    isexpr(sym, :quote) || throw(ArgumentError("expected quoted symbol"))
     esc(sym.args[1])
 end
