@@ -2,6 +2,7 @@ function greedy_banner(io::IO = STDOUT)
     GIT_VERSION_INFO = Base.GIT_VERSION_INFO
     TAGGED_RELEASE_BANNER = Base.TAGGED_RELEASE_BANNER
     have_color = Base.have_color
+    
     if GIT_VERSION_INFO.tagged_commit
         commit_string = TAGGED_RELEASE_BANNER
     elseif GIT_VERSION_INFO.commit == ""
@@ -20,6 +21,7 @@ function greedy_banner(io::IO = STDOUT)
             commit_string = "$(branch)/$(commit) (fork: $(distance) commits, $(days) $(unit))"
         end
     end
+    
     commit_date = GIT_VERSION_INFO.date_string != "" ? " ($(GIT_VERSION_INFO.date_string))": ""
 
     if have_color
@@ -32,7 +34,7 @@ function greedy_banner(io::IO = STDOUT)
 
         print(io,"""
         \033[1m               $(d3)_$(tx)
-           $(d1)_$(tx)       $(jl)_$(tx) $(d2)_$(d3)(_)$(d4)_$(tx)     |  By greedy hackers for greedy hackers.
+           $(d1)_$(tx)       $(jl)_$(tx) $(d2)_$(d3)(_)$(d4)_$(tx)     |  By greedy hackers for greedy hackers
           $(d1)(_)$(jl)     | $(d2)(_)$(tx) $(d4)(_)$(tx)    |  Documentation: http://docs.julialang.org
            $(jl)_ _   _| |_  __ _$(tx)   |  Type \"?help\" for help.
           $(jl)| | | | | | |/ _' |$(tx)  |
@@ -44,7 +46,7 @@ function greedy_banner(io::IO = STDOUT)
     else
         print(io,"""
                        _
-           _       _ _(_)_     |  By greedy hackers for greedy hackers.
+           _       _ _(_)_     |  By greedy hackers for greedy hackers
           (_)     | (_) (_)    |  Documentation: http://docs.julialang.org
            _ _   _| |_  __ _   |  Type \"?help\" for help.
           | | | | | | |/ _' |  |
