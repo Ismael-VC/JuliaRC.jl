@@ -30,7 +30,7 @@ ismaelvc@toybox ~ % echo "using JuliaRC" >> ~/.juliarc.jl && echo "alias julia='
 
 ```cmd
 C:\Users\Ismael
-λ echo "using JuliaRC" >> .juliarc.jl && echo julia=%JULIA_HOME%\julia.exe -q $* >> %CMDER_ROOT%\config\user-aliases.cmd && call %CMDER_ROOT%\config\user-aliases.cmd
+λ echo using JuliaRC >> .juliarc.jl && echo julia=%JULIA_HOME%\julia.exe -q $* >> %CMDER_ROOT%\config\user-aliases.cmd && call %CMDER_ROOT%\config\user-aliases.cmd
 ```
 
 ## Usage
