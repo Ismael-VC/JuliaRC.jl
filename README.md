@@ -9,29 +9,13 @@
 ## Installation
 
 ```julia
-julia> repositories = [
-           "https://github.com/KristofferC/Tokenize.jl",
-           "https://github.com/KristofferC/OhMyREPL.jl",
-           "https://github.com/Ismael-VC/JuliaRC.jl"
-       ];
-
-julia> foreach(Pkg.clone, repositories)                                                                                   
-INFO: Initializing package repository /home/juser/.julia/v0.5                                                             
-INFO: Cloning METADATA from https://github.com/JuliaLang/METADATA.jl
-INFO: Cloning Tokenize from https://github.com/KristofferC/Tokenize.jl
-INFO: Computing changes...
-INFO: Cloning cache of Compat from https://github.com/JuliaLang/Compat.jl.git
-INFO: Installing Compat v0.9.5
-INFO: Package database updated
-INFO: Cloning OhMyREPL from https://github.com/KristofferC/OhMyREPL.jl
-INFO: Computing changes...
-INFO: Cloning cache of BaseTestNext from https://github.com/JuliaCI/BaseTestNext.jl.git
-INFO: Installing BaseTestNext v0.2.2
+julia> Pkg.clone("https://github.com/Ismael-VC/JuliaRC.jl")
 INFO: Cloning JuliaRC from https://github.com/Ismael-VC/JuliaRC.jl
 INFO: Computing changes...
-INFO: No packages to install, update or remove                                                                            
-                                                                                                                          
-julia>       
+INFO: Cloning cache of OhMyREPL from https://github.com/KristofferC/OhMyREPL.jl.git
+INFO: Cloning cache of Tokenize from https://github.com/KristofferC/Tokenize.jl.git
+INFO: Installing OhMyREPL v0.1.0
+INFO: Installing Tokenize v0.1.8                                                                         
 ```
 
 ## Setup
