@@ -23,7 +23,7 @@ INFO: Installing Tokenize v0.1.8
 * `zsh`
 
 ```bash
-ismaelvc@toybox ~ % echo "using JuliaRC" >> ~/.juliarc.jl && echo "alias julia='$(which julia) -q'" >> ~/.zshrc && source ~/.zshrc
+ismaelvc@toybox ~ % echo using JuliaRC >> ~/.juliarc.jl && echo "alias julia='$(which julia) -q'" >> ~/.zshrc && source ~/.zshrc
 ```
 
 * `cmder`
